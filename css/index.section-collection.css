@@ -1,0 +1,21 @@
+.youth-collection {
+  background: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
+    url(../img/collection-on-sale.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 20px;
+  min-height: 350px;
+
+  .youth-collection__container {
+    display: flex;
+    flex-direction: column;
+
+    .youth-collection__info {
+      .youth-collection__subtitle {
+        font-family: var(--font-text);
+        font-size: 75px;
+        font-weight: bold;
+      }
+    }
+  }
+}

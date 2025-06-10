@@ -1,0 +1,24 @@
+.youth-collection {
+  background: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
+    url(../img/desigher-jewelry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 20px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  .youth-collection__info {
+    width: 600px;
+    height: 600px;
+
+    .youth-collection__subtitle {
+      font-family: var(--font-text);
+      font-size: 75px;
+      font-weight: bold;
+    }
+    youth-collection__text {
+    }
+    youth-collection__desc {
+    }
+  }
+}

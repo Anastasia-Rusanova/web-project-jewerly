@@ -1,0 +1,29 @@
+.categories {
+  padding: 20px 0;
+  
+  .categories__subtitle {
+    font-family: var(--font-text);
+    font-size: 75px;
+    font-weight: bold;
+  }
+  .categories__text {
+  }
+  .categories__list {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+
+    .categories__item {
+      padding: 0 15px;
+      width: 345px;
+      height: 430px;
+
+      .categories__img-container {
+        .categories__img {
+          width: 315px;
+          height: 430px;
+        }
+      }
+    }
+  }
+}

@@ -3,24 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firm Law!</title>
+    <title>Jewelry Store Website</title>
+
+    <!--іконка вгорі сайту-->
     <link
       rel="shortcut icon"
-      href="img/global/paw-icon.svg"
+      href="img/Aurora-logo.svg"
       type="image/x-icon"
     />
+
+    <!--обов'язкова частина для командних проектів-->
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/index.css">
   </head>
+
   <body>
     <header>
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
+        data-hx-get="index.header-nav.partial.html"
       ></nav>
       <div
         data-hx-trigger="load"
@@ -28,30 +36,59 @@
         data-hx-get="index.header-hero.partial.html"
       ></div>
     </header>
+
     <main>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.section-about.partial.html"
+        data-hx-get="index.section-features.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.section-success-stories.partial.html"
+        data-hx-get="index.section-trending.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.section-contact-form.partial.html"
+        data-hx-get="index.section-collection.partial.html"
       ></section>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-categories.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-designer-jewerly.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-new-in.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-blog.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-testimonials.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-faq.partial.html"
+      ></section>
     </main>
+
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
-      data-hx-get="global.footer.partial.html"
+      data-hx-get="index.footer.partial.html"
     ></footer>
   </body>
 </html>

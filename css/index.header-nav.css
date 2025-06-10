@@ -1,0 +1,36 @@
+.header-nav {
+  padding: 0 10px;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-nav__img-container {
+    .header-nav__logo-img {
+      width: 52px;
+    }
+  }
+
+  .header-nav__menu {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 600px) {
+      flex-direction: row;
+      justify-content: space-around;
+      flex: 1;
+    }
+
+    .header-nav__link {
+      color: var(--text-color-main);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

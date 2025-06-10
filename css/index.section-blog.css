@@ -1,0 +1,32 @@
+.blog {
+  .blog__header {
+    .blog__subtitle {
+      font-family: var(--font-text);
+      font-size: 75px;
+      font-weight: bold;
+    }
+  }
+  .blog__articles {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+
+    .blog__item {
+      padding: 15px;
+      border: 3px solid var(--border-line);
+      width: 315px;
+      height: 580px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .blog__image-container {
+        .blog__image {
+          width: 315px;
+          height: 315px;
+        }
+      }
+    }
+  }
+}

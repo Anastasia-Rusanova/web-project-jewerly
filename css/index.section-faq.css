@@ -1,0 +1,38 @@
+.faq {
+  padding: 20px 0;
+
+  .faq__description {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+
+    .faq__content {
+      min-width: 575px;
+      height: 590px;
+
+      .faq__subtitle {
+        font-family: var(--font-text);
+        font-size: 75px;
+        font-weight: bold;
+      }
+      .faq__text {
+        font-family: var(--font-text);
+        font: 22px;
+      }
+      .faq__list {
+        .faq__item {
+          .faq__question {
+            font-size: 26px;
+            font-family: var(--font-text);
+          }
+        }
+      }
+    }
+    .faq__image-container {
+      .faq__image {
+        width: 525px;
+        height: 590px;
+      }
+    }
+  }
+}
