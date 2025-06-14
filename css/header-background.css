@@ -1,0 +1,9 @@
+.header-background {
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.2)),
+    url(../img/header-background.png);
+  background-size: cover;
+  background-position: 70% 50%;
+  padding: 0 10px;
+  min-height: 350px;
+}

@@ -1,4 +1,4 @@
-.youth-collection {
+.designer-jewelry {
   background: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
     url(../img/desigher-jewelry.png);
   background-repeat: no-repeat;
@@ -7,10 +7,8 @@
   min-height: 350px;
   display: flex;
   flex-direction: column;
-  .youth-collection__info {
-    width: 600px;
-    height: 600px;
-
+  .designer-jewelry__image {
+    
     .youth-collection__subtitle {
       font-family: var(--font-text);
       font-size: 75px;

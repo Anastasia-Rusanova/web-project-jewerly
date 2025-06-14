@@ -1,35 +1,88 @@
 .features {
-  padding: 20px 0;
+  padding: 60px 0;
 
   .features__title {
-    font-family: var(--font-text);
-    font-size: 26px;
-    padding: 0 15px;
-    align-items: center;
+    text-align: center;
+    
+    @media (min-width: 450px) {
+      margin: 0 0 30px;
+    }
   }
+
   .features__list {
     display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+    justify-items: center;
+
+    @media (min-width: 330px) {
+      grid-template-columns: repeat(auto-fit, minmax(427px, 1fr));
+      gap: 20px;
+
+      @media (min-width: 1050px) {
+        grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+        gap: 30px;
+      }
+    }
 
     .features__item {
-      padding: 15px;
-      border: 3px solid var(--border-line);
-      width: 315px;
-      height: 315px;
       display: flex;
       flex-direction: column;
+      flex-wrap: nowrap;
       align-items: center;
-      justify-content: center;
+      padding: 45px 33px;
+      max-width: 270px;
+      max-height: 380px;
+      border: 3px solid var(--border-line);
+      border-radius: 55px;
+      justify-content: space-around;
+      text-align: center;
+
+      @media (min-width: 530px) {
+        padding: 55px 37px;
+        max-width: 407px;
+        max-height: 404px;
+
+        @media (min-width: 1050px) {
+          padding: 75px 45px;
+          max-width: 300px;
+          max-height: 450px;
+        }
+      }
 
       .features__icon-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        .features__icon {
+        width: 70px;
+        height: 70px;
+
+        @media (min-width: 767px) {
           width: 100px;
+          height: 100px;
         }
+
+        .features__icon {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .features__subtitle {
+        font-family: var(--font-text);
+        font-size: 26px;
+        word-wrap: break-word;
+        font-weight: bold;
+
+        @media (max-width: 767px) {
+          font-size: 21px;
+        }
+      }
+
+      .features__separator {
+        color: var(--text-color-alt);
+        font-weight: bold;
       }
     }
   }

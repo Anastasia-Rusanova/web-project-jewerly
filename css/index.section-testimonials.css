@@ -1,0 +1,12 @@
+.testimonials__carousel-button--prev {
+    display: inline-block;
+
+    animation-name: animateSliderForwd;
+    animation-duration: 0.4s;
+  }
+
+  .testimonials__carousel-button--next {
+    display: inline-block;
+    animation-name: animateSliderBack;
+    animation-duration: 0.4s;
+  }

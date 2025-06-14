@@ -1,16 +1,18 @@
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    color: var(--button-text-color-light);
-    background-color: var(--button-background-color-alt);
-    border-color: 1px solid var(--button-background-color-dark);
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--button-text-color-light);
+  background-color: var(--button-background-color-alt);
+  border-color: 1px solid var(--button-background-color-dark);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: text;
+  text-wrap: nowrap;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
