@@ -5,12 +5,11 @@
     text-align: center;
 
     .trending__header-container {
-      margin: 50px 0 0;
+      margin: 0 auto;
       width: 300px;
       height: 255px;
 
       @media (min-width: 650px) {
-        margin: 0 auto;
         width: 540px;
         height: 170px;
 
@@ -18,6 +17,10 @@
           width: 720px;
           height: 183px;
         }
+      }
+
+      .trending__title {
+        margin: 50px 0 0;
       }
 
       .trending__subtitle {

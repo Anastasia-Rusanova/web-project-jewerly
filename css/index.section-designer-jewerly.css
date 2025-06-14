@@ -6,17 +6,25 @@
   padding: 0 20px;
   min-height: 350px;
   display: flex;
-  flex-direction: column;
-  .designer-jewelry__image {
-    
-    .youth-collection__subtitle {
-      font-family: var(--font-text);
-      font-size: 75px;
-      font-weight: bold;
-    }
-    youth-collection__text {
-    }
-    youth-collection__desc {
+
+  .designer-jewelry__content {
+        text-align: left;
+
+      .youth-collection__subtitle {
+        font-family: var(--font-text);
+        font-size: 75px;
+        font-weight: bold;
+      }
+
+      youth-collection__desc {
+      }
+
+      designer-jewelry__list{
+
+        .designer-jewelry__item{
+          
+        }
+      }
     }
   }
-}
+

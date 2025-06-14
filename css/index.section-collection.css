@@ -1,20 +1,58 @@
 .youth-collection {
-  background: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
+  @media (min-width: 600px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
     url(../img/collection-on-sale.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0 20px;
-  min-height: 350px;
+    background-size: cover;
+    background-position: center right;
+    padding: 0 20px;
+    min-height: 350px;
+  }
 
-  .youth-collection__container {
-    display: flex;
-    flex-direction: column;
+  .youth-collection__content {
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 600px;
+    justify-content: space-around;
+    height: 600px;
 
-    .youth-collection__info {
-      .youth-collection__subtitle {
-        font-family: var(--font-text);
-        font-size: 75px;
-        font-weight: bold;
+    .youth-collection__subtitle {
+      font-family: var(--font-text);
+      font-weight: bold;
+      font-size: 38px;
+
+      @media (min-width: 768px) {
+        font-size: 46px;
+
+        @media (min-width: 900px) {
+          font-size: 54px;
+        }
+      }
+    }
+
+    .youth-collection__text {
+      font-family: var(--font-text);
+      font-size: 20px;
+      margin: 40px 0 0;
+
+      @media (min-width: 768px) {
+        font-size: 21px;
+
+        @media (min-width: 900px) {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .youth-collection__desc {
+      font-family: var(--font-text);
+      font-size: 20px;
+
+      @media (min-width: 768px) {
+        font-size: 21px;
+
+        @media (min-width: 900px) {
+          font-size: 22px;
+        }
       }
     }
   }
